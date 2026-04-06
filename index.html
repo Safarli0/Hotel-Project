@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/utils.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -23,6 +24,7 @@
                     <li><a href="#rooms">Rooms</a></li>
                     <li><a href="blogs.html">Blogs</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <button id="darkModeToggle" class="btn">🌙</button>
                 </ul>
             </nav>
         </div>
@@ -97,29 +99,44 @@
         </section>
 
         <section id="gallery" class="gallery flex-grid section-padding">
-            <header class="section-header">
-                <h2>The Hotel View</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, incidunt.</p>
-            </header>
-            <div class="row">
-                <div class="column">
-                    <img src="img/1.jpeg" alt="">
-                    <img src="img/2.jpeg" alt="">
-                </div>
-                <div class="column">
-                    <img src="img/3.jpeg" alt="">
-                    <img src="img/4.jpeg" alt="">
-                </div>
-                <div class="column">
-                    <img src="img/1.jpeg" alt="">
-                    <img src="img/2.jpeg" alt="">
-                </div>
-                <div class="column">
-                    <img src="img/3.jpeg" alt="">
-                    <img src="img/4.jpeg" alt="">
+            <div class="hotel-view">
+                <h2 class="section-title">The Hotel View</h2>
+                <p class="section-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, incidunt.</p>
+
+                <div class="gallery-carousel">
+                    
+                    <!-- Slides container -->
+                    <div class="slides-wrapper">
+                        <div class="slides">
+                            <div class="slide">
+                            <img id="glpc1" src="img/1.jpeg" alt="Hotel Pool at Sunset">
+                            </div>
+                            <div class="slide">
+                            <img id="glpc2" src="img/2.jpeg" alt="Luxury Pool Area">
+                            </div>
+                            <div class="slide">
+                            <img id="glpc3" src="img/3.jpeg" alt="Tropical Pool View">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <!-- <button class="nav-btn prev-btn">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn next-btn">
+                        <i class="bi bi-chevron-right"></i>
+                    </button> -->
+
+                    <!-- Dots -->
+                    <!-- <div class="dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div> -->
+
                 </div>
             </div>
-        </section>
 
         <!-- about -->
         <section class="about flex-columns flex-reverse">
@@ -237,5 +254,6 @@
         </div>
         <p>Copyright &copy 2025 - Hotel Site</p>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
